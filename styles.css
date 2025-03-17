@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  z-index: -99999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 400% 400%;
+  background: linear-gradient(70deg, #ff9a9a, #f2e6a6, #a6ff9a, #a6c8ff, #ff9ac1);
+  animation: gradientAnimation 90s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@font-face {
+  font-family: 'nasin-nanpa';
+  /*unicode-range: U+F19??;*/
+  src: url('nasin-nanpa-4.0.2.otf') format('opentype');
+}
+
+.sp {
+  font-family: 'nasin-nanpa';
+  text-align: center;
+  font-size: 250%;
+}
+
+.kule {
+  color: yellow;
+  -webkit-text-stroke: 3px #777;
+  animation: kule 20s infinite;
+}
+@keyframes kule {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.sewi {
+  text-align: center;
+  padding-top; 10px;
+  float: bottom;
+}
+
+.insa {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.insa p {
+  width: 100%;
+}
+
+.anpa {
+  text-align: center;
+  padding-bottom: 10px;
+  float: bottom;
+}
