@@ -67,13 +67,14 @@ body {
 
 .sewi {
   text-align: center;
-  padding-top; 10px;
+  padding-top: 0.5rem;
   float: bottom;
 }
 
 .insa {
-  flex: 1;
+  flex: 1 1 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -83,8 +84,31 @@ body {
   width: 100%;
 }
 
+.kk {
+  display: flex;
+  min-width: 20rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #edf;
+}
+
+.kk div {
+  height: 100%;
+}
+
+.kk img.sitelen {
+  height: 100px;
+  aspect-ratio: 1;
+}
+
+.kk div.toki {
+  padding: 0.1rem;
+  padding-left: 0.5rem;
+  text-align: left;
+}
+
 .anpa {
   text-align: center;
-  padding-bottom: 10px;
-  float: bottom;
+  padding-bottom: 0.5rem;
 }
